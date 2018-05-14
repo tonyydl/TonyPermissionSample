@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TonyPermissionSample</string>
+    <string name="get_camera_permission_btn">Camera Permission</string>
+    <string name="need_camera_permission_description">此App需要相機權限，請開啟否則無法繼續操作。</string>
 </resources>
