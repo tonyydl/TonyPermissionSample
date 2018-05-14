@@ -112,4 +112,4 @@ public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
 }
 ```
 
-當使用者拒絕這個權限要求時，會呼叫onPermissionsDenied方法，但是如果拒絕同時又勾選「不再詢問我(Don't ask again)」，那麼下方的EasyPermissions.somePermissionPermanentlyDenied(this, perms)就會成立，這裡會將使用者導向系統的App Setting頁面。
+當使用者拒絕這個權限要求時，會呼叫onPermissionsDenied方法，如果拒絕權限的同時又勾選「不再詢問我(Don't ask again)」，那麼下方的EasyPermissions.somePermissionPermanentlyDenied(this, perms)就會成立，這裡會將使用者導向系統的App Setting頁面。
