@@ -59,6 +59,7 @@ private void cameraPermissionTask() {
 ```
 
 在使用者拒絕PermissionDialog至少一次時，會出現RationaleDialog，如下圖：
+
 <img src="./screenshots/rationale_dialog.png" width="256" />
 
 為了更好控制權限要求的流程，會讓Fragment/Activity實現“PermissionCallbacks“介面
