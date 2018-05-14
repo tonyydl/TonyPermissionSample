@@ -8,7 +8,7 @@
   * November 2018: Updates to existing apps required to target API level 26 or higher.
   * 2019 onwards: Each year the targetSdkVersion requirement will advance. Within one year following each Android dessert release, new apps and app updates will need to target the corresponding API level or higher.
 
-這意味著我們不能用較低的版本避開繁瑣權限處理的部份，這部分所有的App都必須正視它。
+這意味著我們不能用較低的target version避開繁瑣權限處理的部份，這部分所有的App都必須正視它。
 
 會這麼說是因為Android權限處理在Android 6.0以前，開發者只需要在manifest設定app所需要的權限，會向使用者要求所有權限後才能安裝。
 
