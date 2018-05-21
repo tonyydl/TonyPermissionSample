@@ -58,6 +58,10 @@ private void cameraPermissionTask() {
 }
 ```
 
+在使用者拒絕PermissionDialog至少一次時，會出現RationaleDialog，如下圖：
+
+<img src="./screenshots/rationale_dialog.png" width="256" />
+
 為了更好控制權限要求的流程，會讓Fragment/Activity實現“PermissionCallbacks“介面
 
 ```java
@@ -113,9 +117,3 @@ public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
 <img src="./screenshots/permission_dont_ask_again.png" width="256" />
 
 下次再向使用者要求上次拒絕權限且勾選「不再詢問我(Don't ask again)」時，EasyPermissions.somePermissionPermanentlyDenied(this, perms)就會成立，這裡會將使用者導向系統的App Setting頁面。
-
-在使用者拒絕PermissionDialog至少一次時，會出現RationaleDialog，如下圖：
-
-<img src="./screenshots/rationale_dialog.png" width="256" />
-
-
